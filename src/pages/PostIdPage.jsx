@@ -30,16 +30,16 @@ const PostIdPage = () => {
             <br/><br/>
             <h3>Comments</h3>
             {isComLoading ? <Loader/> : <div> {comments.map(comm =>
-                <div style={{marginTop: 15}}>
+                <div key={comm.id} style={{marginTop: 15}}>
                     <h4>{comm.name}</h4>
                     <h6>{comm.email}</h6>
                     <div>{comm.body}</div>
-                    </div>
-                    )}
-                    </div>}
-
                 </div>
-            );
-            };
+            )}
+            </div>}
 
-                export default PostIdPage;
+        </div>
+    );
+};
+
+export default PostIdPage;

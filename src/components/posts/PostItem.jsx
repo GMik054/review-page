@@ -5,7 +5,7 @@ import {useHistory} from "react-router-dom";
 
 const PostItem = (props) => {
     const router = useHistory();
-    console.log(router)
+
     return (
         <div className="App">
             <div className="post">
